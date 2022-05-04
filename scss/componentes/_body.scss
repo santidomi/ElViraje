@@ -1,0 +1,169 @@
+@import "../base/extends";
+@import "../base/variables";
+@import "../base/listas";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:map-get($map:$paleta, $key:"primario" )
+}
+
+
+/* Stylo Hero*/
+#hero{
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("multimedia/fotos/elvirajet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 30px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+@media screen and (max-width:800px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+}
+@media screen and (max-width:500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .box-img img{
+        height: 200px;
+    }    
+}
+
+/* Stylo spotify-youtube*/
+.playlist {
+    @extend %flexbox;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: 5px;
+
+}
+
+.video1 {
+    @extend %flexbox;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.video2 {
+    @extend %flexbox;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+/* Stylo Fechas */
+#fechas img{
+    @extend %flexbox;
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+} 
+
+/* Stylo +Info */
+#ana img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: color-principal;
+    
+}
+
+#nestor img{
+    max-width: 100%;
+    background-color: color-principal;
+}
+#carlos img{
+    max-width: 100%;
+    background-color: color-principal;
+}
+
+/* Stylo Entrevistas*/
+#entrevistas img{
+    max-width: 100%;
+}
+
+/* Stylo Contacto */
+#contacto img{
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}input:focus{border-bottom:2px solid #78788c}
+p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
+
+.card-img{
+    display: flex;
+    justify-content: center !important;
+}
+
+div.carta {
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 129px;
+}
