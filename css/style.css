@@ -423,6 +423,42 @@ div.carta {
   right: -170px;
 }
 
+.entr {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50PX;
+}
+
+.imgmedio {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.headernos {
+  display: flex;
+  justify-content: center;
+}
+
+.titulonos {
+  display: flex;
+  justify-content: center;
+  border-style: groove;
+  padding: 20px;
+  margin: 30px;
+  border-color: #000;
+}
+
+.h3nos {
+  display: flex;
+  justify-content: center;
+  border-style: groove;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-color: #000;
+}
+
 nav section {
   background-color: rgba(253, 149, 111, 0.681);
 }
